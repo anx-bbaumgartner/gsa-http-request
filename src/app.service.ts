@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getInputParameterValues(body: any): any {
-    console.log('File: ', JSON.stringify(body.file));
+    console.log('File: ', body);
     console.log('JSON: ', { body });
 
     // let fileArray: any[] = [];
