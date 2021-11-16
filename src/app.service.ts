@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getInputParameterValues(body: any): any {
+  getInputParameterValues(body: any): void {
     console.log('File: ', body);
     console.log('JSON: ', { body });
 
@@ -11,6 +11,5 @@ export class AppService {
     // fileArray.forEach((file) => {
     //   console.log(file.id);
     // });
-    return body;
   }
 }

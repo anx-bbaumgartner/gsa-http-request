@@ -1,0 +1,28 @@
+{
+  "multi_file": {
+    "array": "null",
+    "name": "",
+    "remoteIdentifier": "",
+    "temporary": "",
+    "createdAt": "",
+    "size": "",
+    "contentType": "",
+    "key": "",
+    "remoteRepository": { "description": "", "name": "", "type": "" }
+  },
+  "single_file": {
+    "name": "danke_aw.jpg",
+    "remoteIdentifier": "459ada72-3776-406a-9d51-bda2d3190319",
+    "temporary": "1",
+    "createdAt": "",
+    "size": "2965204",
+    "contentType": "image/jpeg",
+    "key": "anx-engine/459ada72-3776-406a-9d51-bda2d3190319",
+    "remoteRepository": {
+      "description": "This is a new repository ",
+      "name": "BR Test Repository",
+      "type": "S3"
+    }
+  },
+  "string": ""
+}
