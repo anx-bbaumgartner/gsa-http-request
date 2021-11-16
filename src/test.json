@@ -1,6 +1,12 @@
 {
   "multi_file": {
-    "array": "{{inputParameter.file_parameter | json_encode}}",
+    "array": "{% for product in products %}
+
+    * Name: {{ product.name|e }}
+    {% if product.status === 'Active' %}
+       Price: {{ product.price + product.taxes/100 }}
+    {% endif  %}
+{% endfor  %}",
     "name": "{{inputParameter.file_parameter[0].name}}",
     "remoteIdentifier": "{{inputParameter.file_parameter[0].remoteIdentifier}}",
     "temporary": "{{inputParameter.file_parameter[0].temporary}}",
@@ -8,7 +14,11 @@
     "size": "{{inputParameter.file_parameter[0].size}}",
     "contentType": "{{inputParameter.file_parameter[0].contentType}}",
     "key": "{{inputParameter.file_parameter[0].key}}",
-    "remoteRepository": "{{inputParameter.file_parameter[0].remoteRepository.description}}"
+    "remoteRepository": {
+      "description": "{{inputParameter.file_parameter[0].remoteRepository.description}}",
+      "name": "{{inputParameter.file_parameter[0].remoteRepository.name}}",
+      "type": "{{inputParameter.file_parameter[0].remoteRepository.type}}"
+    }
   },
   "single_file": {
     "name": "{{inputParameter.single_file.name}}",
