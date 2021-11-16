@@ -6,12 +6,12 @@ export class AppService {
     console.log('Body: ', body);
     //console.log('JSON: ', { body });
 
-    console.log(body.multi_file.array.length());
+    // console.log(body.multi_file.array.length());
 
-    let fileArray: any[] = [];
-    fileArray = body.multi_file.array;
-    fileArray.forEach((file) => {
-      console.log(file);
-    });
+    // let fileArray: any[] = [];
+    // fileArray = body.multi_file.array;
+    // fileArray.forEach((file) => {
+    //   console.log(file);
+    // });
   }
 }
