@@ -8,13 +8,7 @@
     "size": "{{inputParameter.file_parameter[0].size}}",
     "contentType": "{{inputParameter.file_parameter[0].contentType}}",
     "key": "{{inputParameter.file_parameter[0].key}}",
-    "remoteRepository": {
-      "id": "{{inputParameter.file_parameter[0].remoteRepository.id}}",
-      "description": "{{inputParameter.file_parameter[0].remoteRepository.description}}",
-      "name": "{{inputParameter.file_parameter[0].remoteRepository.name}}",
-      "type": "{{inputParameter.file_parameter[0].remoteRepository.type}}",
-      "configuration": "{{inputParameter.file_parameter[0].remoteRepository.array | json_encode}}"
-    }
+    "remoteRepository": "{{inputParameter.file_parameter[0].remoteRepository.description}}"
   },
   "single_file": {
     "name": "{{inputParameter.single_file.name}}",
@@ -25,11 +19,9 @@
     "contentType": "{{inputParameter.single_file.contentType}}",
     "key": "{{inputParameter.single_file.key}}",
     "remoteRepository": {
-      "id": "{{inputParameter.single_file.remoteRepository.id}}",
       "description": "{{inputParameter.single_file.remoteRepository.description}}",
       "name": "{{inputParameter.single_file.remoteRepository.name}}",
-      "type": "{{inputParameter.single_file.remoteRepository.type}}",
-      "configuration": "{{inputParameter.single_file.remoteRepository.array | json_encode}}"
+      "type": "{{inputParameter.single_file.remoteRepository.type}}"
     }
   },
   "string": "{{inputParameter.string_parameter}}"
