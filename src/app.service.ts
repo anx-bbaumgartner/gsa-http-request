@@ -8,9 +8,13 @@ export class AppService {
 
     // console.log(body.multi_file.array.length());
 
+    let arrayObjects: any[] = [];
+
     for (const file in body.multi_file.array) {
-      console.log(file);
+      arrayObjects.push(file);
     }
+
+    console.log(arrayObjects);
 
     // let fileArray: any[] = [];
     // fileArray = body.multi_file.array;
